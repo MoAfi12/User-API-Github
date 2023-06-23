@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgb(90, 88, 88) , rgba(78, 69, 69, 0.596) , rgba(65, 34, 34, 0.678));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97vh;
+
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container-element{
+    background-color: beige;
+    padding: 30px 70px;
+   border-radius: 10px;
+   
+}
+.container-element >*{
+    margin-bottom: 25px;
+}
+
+.section-search{
+    display: flex;
+    position: relative;
+    
+}
+.section-search input{
+width: 150%;
+outline: none;
+padding: 8px 20px;
+border-radius: 10px;
+border: none;
+font-family: 'Rajdhani', sans-serif;
+font-weight: 800;
+}
+
+.section-search .fa-magnifying-glass{
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    background-color: lightgray;
+    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border-top-right-radius:  100%;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-info h1{
+font-size: 23px;
+font-weight: 7000;
+ line-height: 6px;
+}
+
+.profile-info h5{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: gray;
+   
+
+}
+.profile-info p{
+    padding-bottom: 20px;
+}
+.profile-info >*{
+    padding-bottom: 5px;
+}
+
+.section-under{
+    display: flex;
+    gap: 20px;
+
+}
+
+.columnone{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+span{
+    font-weight: 700;
+}
+
+#btns{
+    width: 200px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+box-shadow: 3px 3px 12px  rgba(128, 128, 128, 0.849);
+animation: anima 1s ease-in;
+
+}
+
+
+#btns a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 2px;
+}
+
+
+ 
+@keyframes anima{
+    from {
+       opacity: 0; 
+        background-color: #29f823;
+    }
+    to{
+        opacity: 10; 
+        background-color: #29f823;
+    }
+}
+
+
+@media screen and (max-width: 468px) {
+    .container{
+        width: 100%;
+    }
+}
+
